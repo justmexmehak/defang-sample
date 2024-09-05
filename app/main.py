@@ -11,6 +11,10 @@ app = Flask(__name__)
 def index():
     return { "status": "ok" }
 
+@app.route("/mehak")
+def hello():
+    return { "hello": "mehak" }
+
 
 @app.route("/rates")
 def getQuote():
